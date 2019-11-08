@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.barratitulo = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.menuVertical = new System.Windows.Forms.Panel();
             this.panelsub2 = new System.Windows.Forms.Panel();
             this.btnver2 = new System.Windows.Forms.Button();
@@ -53,11 +49,6 @@
             this.btnLexico = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contenedor = new System.Windows.Forms.Panel();
-            this.barratitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.menuVertical.SuspendLayout();
             this.panelsub2.SuspendLayout();
             this.panelsubmeu.SuspendLayout();
@@ -67,65 +58,11 @@
             // barratitulo
             // 
             this.barratitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.barratitulo.Controls.Add(this.btnRestaurar);
-            this.barratitulo.Controls.Add(this.btnMinimizar);
-            this.barratitulo.Controls.Add(this.btnMaximizar);
-            this.barratitulo.Controls.Add(this.btnCerrar);
             this.barratitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.barratitulo.Location = new System.Drawing.Point(0, 0);
             this.barratitulo.Name = "barratitulo";
             this.barratitulo.Size = new System.Drawing.Size(1300, 30);
             this.barratitulo.TabIndex = 0;
-            this.barratitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barratitulo_MouseDown);
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1246, 3);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(20, 20);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 3;
-            this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1220, 4);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 2;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1246, 4);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(20, 20);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1272, 4);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(20, 20);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // menuVertical
             // 
@@ -146,7 +83,7 @@
             this.menuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuVertical.Location = new System.Drawing.Point(0, 30);
             this.menuVertical.Name = "menuVertical";
-            this.menuVertical.Size = new System.Drawing.Size(238, 620);
+            this.menuVertical.Size = new System.Drawing.Size(232, 620);
             this.menuVertical.TabIndex = 1;
             // 
             // panelsub2
@@ -251,7 +188,7 @@
             this.btnSintactico.ForeColor = System.Drawing.Color.White;
             this.btnSintactico.Image = ((System.Drawing.Image)(resources.GetObject("btnSintactico.Image")));
             this.btnSintactico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSintactico.Location = new System.Drawing.Point(3, 207);
+            this.btnSintactico.Location = new System.Drawing.Point(-3, 207);
             this.btnSintactico.Name = "btnSintactico";
             this.btnSintactico.Size = new System.Drawing.Size(235, 32);
             this.btnSintactico.TabIndex = 10;
@@ -349,7 +286,7 @@
             this.btnLexico.ForeColor = System.Drawing.Color.White;
             this.btnLexico.Image = ((System.Drawing.Image)(resources.GetObject("btnLexico.Image")));
             this.btnLexico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLexico.Location = new System.Drawing.Point(3, 109);
+            this.btnLexico.Location = new System.Drawing.Point(-3, 109);
             this.btnLexico.Name = "btnLexico";
             this.btnLexico.Size = new System.Drawing.Size(235, 32);
             this.btnLexico.TabIndex = 1;
@@ -371,9 +308,9 @@
             // 
             this.contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(238, 30);
+            this.contenedor.Location = new System.Drawing.Point(232, 30);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1062, 620);
+            this.contenedor.Size = new System.Drawing.Size(1068, 620);
             this.contenedor.TabIndex = 2;
             this.contenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.contenedor_Paint);
             // 
@@ -385,14 +322,10 @@
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.menuVertical);
             this.Controls.Add(this.barratitulo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.barratitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.menuVertical.ResumeLayout(false);
             this.panelsub2.ResumeLayout(false);
             this.panelsubmeu.ResumeLayout(false);
@@ -406,10 +339,6 @@
         private System.Windows.Forms.Panel barratitulo;
         private System.Windows.Forms.Panel menuVertical;
         private System.Windows.Forms.Panel contenedor;
-        private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnLexico;
         private System.Windows.Forms.PictureBox pictureBox1;

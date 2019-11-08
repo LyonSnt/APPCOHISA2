@@ -20,8 +20,11 @@ namespace APPCOHISA
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
-            Menu m = new Menu();
-            m.ShowDialog();
+            Login lo = new Login();
+            this.Hide();
+            lo.ShowDialog();
+            this.Show();
+
         }
     }
 

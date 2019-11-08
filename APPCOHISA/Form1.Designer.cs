@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnInicio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnInicio
             // 
-            this.btnInicio.Location = new System.Drawing.Point(318, 187);
+            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
+            this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInicio.Location = new System.Drawing.Point(316, 243);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(75, 23);
+            this.btnInicio.Size = new System.Drawing.Size(269, 44);
             this.btnInicio.TabIndex = 0;
             this.btnInicio.Text = "button1";
             this.btnInicio.UseVisualStyleBackColor = true;
