@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace APPCOHISA.Properties
+namespace PlayerUI.Properties
 {
 
 

@@ -1,6 +1,6 @@
-﻿namespace APPCOHISA
+﻿namespace PlayerUI
 {
-    partial class Form1
+    partial class FormP
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormP));
             this.btnInicio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,14 +44,15 @@
             this.btnInicio.UseVisualStyleBackColor = true;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // Form1
+            // FormP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnInicio);
-            this.Name = "Form1";
+            this.Name = "FormP";
             this.Text = "Portada";
+            this.Load += new System.EventHandler(this.FormP_Load);
             this.ResumeLayout(false);
 
         }
