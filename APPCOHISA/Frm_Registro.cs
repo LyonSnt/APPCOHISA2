@@ -2,7 +2,7 @@
 using System.Net.Mail;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace APPCOHISA
 {
     public partial class Frm_Registro : Form
     {
@@ -15,11 +15,6 @@ namespace PlayerUI
         public Frm_Registro()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnguardarr_Click(object sender, EventArgs e)
@@ -89,12 +84,12 @@ namespace PlayerUI
                 MessageBox.Show("llene todos los campos");
             }
 
-   } 
+        }    
         private void linkr_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Loginn log = new Loginn();
+            Login log = new Login();
+            log.Show();
             this.Hide();
-            log.ShowDialog();
         }
 
         private void Frm_Registro_Load(object sender, EventArgs e)

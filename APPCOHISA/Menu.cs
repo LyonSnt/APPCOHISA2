@@ -1,8 +1,9 @@
-﻿using PlayerUI;
+﻿using APPCOHISA;
+using APPCOHISA;
 using System;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace APPCOHISA
 {
     public partial class Menu : Form
     {
@@ -38,7 +39,7 @@ namespace PlayerUI
         #region MediaSubMenu
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Loginn());
+            openChildForm(new Cargar2());
             //..
             //your codes
             //..
@@ -47,11 +48,11 @@ namespace PlayerUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            openChildForm(new Login());
+          //  openChildForm(new Login());
             //..
             //your codes
             //..
-            hideSubMenu();
+           // hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -254,6 +255,11 @@ namespace PlayerUI
             // hideSubMenu();
 
             logogeneral.Visible = true;
+
+        }
+
+        private void logogeneral_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -54,6 +54,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AFD.cs" />
+    <Compile Include="Cargar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargar2.Designer.cs">
+      <DependentUpon>Cargar2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leer.cs" />
+    <Compile Include="MatrizAFD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatrizAFD.Designer.cs">
+      <DependentUpon>MatrizAFD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,12 +104,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Loginn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Loginn.Designer.cs">
-      <DependentUpon>Loginn.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +124,12 @@
     <Compile Include="Verificacion.Designer.cs">
       <DependentUpon>Verificacion.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cargar2.resx">
+      <DependentUpon>Cargar2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatrizAFD.resx">
+      <DependentUpon>MatrizAFD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,9 +150,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Loginn.resx">
-      <DependentUpon>Loginn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu2.resx">
       <DependentUpon>Menu2.cs</DependentUpon>
@@ -170,6 +181,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Archivos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

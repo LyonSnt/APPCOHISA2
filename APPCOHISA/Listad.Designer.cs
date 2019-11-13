@@ -1,4 +1,4 @@
-﻿namespace PlayerUI
+﻿namespace APPCOHISA
 {
     partial class Listad
     {
@@ -100,7 +100,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Lista
+            // Listad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,8 +112,9 @@
             this.Controls.Add(this.txtresultado);
             this.Controls.Add(this.txtListar);
             this.Controls.Add(this.btnbuscar);
-            this.Name = "Lista";
+            this.Name = "Listad";
             this.Text = "Lista";
+            this.Load += new System.EventHandler(this.Listad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

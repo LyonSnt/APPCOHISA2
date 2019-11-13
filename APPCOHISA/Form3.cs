@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace APPCOHISA
 {
     public partial class Form3 : Form
     {

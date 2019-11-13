@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace APPCOHISA
 {
     public partial class Verificacion : Form
     {
@@ -30,7 +30,7 @@ namespace PlayerUI
             {
                 MessageBox.Show("Gracias código correcto");
 
-                Menu2 me = new Menu2();
+                Menu me = new Menu();
                 me.Show();
                 this.Hide();
             }

@@ -1,4 +1,4 @@
-﻿namespace PlayerUI
+﻿namespace APPCOHISA
 {
     partial class Menu
     {
@@ -446,11 +446,11 @@
             // 
             // panelPlayer
             // 
-            this.panelPlayer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelPlayer.Location = new System.Drawing.Point(250, 403);
+            this.panelPlayer.Location = new System.Drawing.Point(250, 401);
             this.panelPlayer.Name = "panelPlayer";
-            this.panelPlayer.Size = new System.Drawing.Size(684, 158);
+            this.panelPlayer.Size = new System.Drawing.Size(684, 160);
             this.panelPlayer.TabIndex = 1;
             this.panelPlayer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPlayer_Paint);
             // 
@@ -461,7 +461,7 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(684, 403);
+            this.panelChildForm.Size = new System.Drawing.Size(684, 401);
             this.panelChildForm.TabIndex = 2;
             // 
             // logogeneral
@@ -470,12 +470,13 @@
             this.logogeneral.Image = ((System.Drawing.Image)(resources.GetObject("logogeneral.Image")));
             this.logogeneral.Location = new System.Drawing.Point(0, 0);
             this.logogeneral.Name = "logogeneral";
-            this.logogeneral.Size = new System.Drawing.Size(684, 403);
+            this.logogeneral.Size = new System.Drawing.Size(684, 401);
             this.logogeneral.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logogeneral.TabIndex = 2;
             this.logogeneral.TabStop = false;
+            this.logogeneral.Click += new System.EventHandler(this.logogeneral_Click);
             // 
-            // Form1
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -488,8 +489,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelToolsSubMenu.ResumeLayout(false);

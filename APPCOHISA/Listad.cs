@@ -2,7 +2,7 @@
 using System.Net.Mail;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace APPCOHISA
 {
     public partial class Listad : Form
     {
@@ -92,6 +92,11 @@ namespace PlayerUI
             {
                 MessageBox.Show("llene todos los campos");
             }
+        }
+
+        private void Listad_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

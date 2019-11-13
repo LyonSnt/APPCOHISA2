@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace PlayerUI
+namespace APPCOHISA
 {
     public partial class Menu2 : Form
     {

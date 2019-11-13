@@ -1,4 +1,4 @@
-﻿namespace PlayerUI
+﻿namespace APPCOHISA
 {
     partial class Menu2
     {
