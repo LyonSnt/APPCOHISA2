@@ -118,6 +118,12 @@
     <Compile Include="prueba.Designer.cs">
       <DependentUpon>prueba.cs</DependentUpon>
     </Compile>
+    <Compile Include="TablaCompacta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablaCompacta.Designer.cs">
+      <DependentUpon>TablaCompacta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Verificacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </Compile>
     <EmbeddedResource Include="prueba.resx">
       <DependentUpon>prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablaCompacta.resx">
+      <DependentUpon>TablaCompacta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Verificacion.resx">
       <DependentUpon>Verificacion.cs</DependentUpon>

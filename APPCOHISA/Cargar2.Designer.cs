@@ -86,6 +86,7 @@
             this.lstMatrizAF.Name = "lstMatrizAF";
             this.lstMatrizAF.Size = new System.Drawing.Size(535, 199);
             this.lstMatrizAF.TabIndex = 7;
+            this.lstMatrizAF.SelectedIndexChanged += new System.EventHandler(this.lstMatrizAF_SelectedIndexChanged);
             // 
             // Cargar2
             // 

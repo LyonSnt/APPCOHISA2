@@ -37,13 +37,13 @@ namespace APPCOHISA
         {
             try
             {
-                // this.openFileDialog1.ShowDialog();
+               // this.openFileDialog1.ShowDialog();
 
                 // if (!string.IsNullOrEmpty(this.openFileDialog1.FileName))
                 //{
                 //  ARCHIVO = this.openFileDialog1.FileName;
-              //  string ARCHIVO = "Matriz.csv";
-                //l.lecturaArchivo(tablaresult, ';', ARCHIVO);
+                string ARCHIVO = "Matriz.csv";
+                l.lecturaArchivo(tablaresult, ';', ARCHIVO);
 
 //                }
 
@@ -127,6 +127,11 @@ namespace APPCOHISA
 
           
            
+        }
+
+        private void lstMatrizAF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

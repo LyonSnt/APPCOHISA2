@@ -39,7 +39,7 @@ namespace APPCOHISA
         #region MediaSubMenu
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Cargar2());
+            openChildForm(new TablaCompacta());
             //..
             //your codes
             //..
