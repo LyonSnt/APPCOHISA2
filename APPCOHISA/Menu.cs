@@ -41,6 +41,7 @@ namespace APPCOHISA
         {
             openChildForm(new TablaCompacta());
             //..no seeeeee
+            //hfhffhfh
             //your codes
             //..
             hideSubMenu();
