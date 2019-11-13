@@ -40,7 +40,7 @@ namespace APPCOHISA
         private void button2_Click(object sender, EventArgs e)
         {
             openChildForm(new TablaCompacta());
-            //..
+            //..no seeeeee
             //your codes
             //..
             hideSubMenu();
