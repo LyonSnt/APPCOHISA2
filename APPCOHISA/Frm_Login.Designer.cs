@@ -1,6 +1,6 @@
 ﻿namespace APPCOHISA
 {
-    partial class Login
+    partial class Frm_Login
     {
         /// <summary>
         /// Required designer variable.

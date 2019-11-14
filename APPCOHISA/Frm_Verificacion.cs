@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace APPCOHISA
 {
-    public partial class Verificacion : Form
+    public partial class Frm_Verificacion : Form
     {
        
         MySqlConnection conexion = new MySqlConnection("SERVER=127.0.0.1;PORT=3306;DATABASE=bdd_appcohisa;UID=root;PASSWORD=;");
-        public Verificacion()
+        public Frm_Verificacion()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace APPCOHISA
             {
                 MessageBox.Show("Gracias código correcto");
 
-                Menu me = new Menu();
+                Frm_Menu me = new Frm_Menu();
                 me.Show();
                 this.Hide();
             }

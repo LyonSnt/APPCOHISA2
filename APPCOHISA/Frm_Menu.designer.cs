@@ -1,6 +1,6 @@
 ﻿namespace APPCOHISA
 {
-    partial class Menu
+    partial class Frm_Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Menu));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.panelToolsSubMenu = new System.Windows.Forms.Panel();
+            this.PanelSemantico = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.btnTools = new System.Windows.Forms.Button();
-            this.panelPlaylistSubMenu = new System.Windows.Forms.Panel();
+            this.PanelSintactico = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.btnPlaylist = new System.Windows.Forms.Button();
-            this.panelMediaSubMenu = new System.Windows.Forms.Panel();
+            this.PanelLexico = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnTC = new System.Windows.Forms.Button();
+            this.btnCargar = new System.Windows.Forms.Button();
             this.btnMedia = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.logogeneral = new System.Windows.Forms.PictureBox();
+            this.PanelSubmenuCargar = new System.Windows.Forms.Panel();
+            this.btn_AFD = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
-            this.panelToolsSubMenu.SuspendLayout();
-            this.panelPlaylistSubMenu.SuspendLayout();
-            this.panelMediaSubMenu.SuspendLayout();
+            this.PanelSemantico.SuspendLayout();
+            this.PanelSintactico.SuspendLayout();
+            this.PanelLexico.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logogeneral)).BeginInit();
+            this.PanelSubmenuCargar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -70,11 +73,11 @@
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelSideMenu.Controls.Add(this.btnExit);
             this.panelSideMenu.Controls.Add(this.btnHelp);
-            this.panelSideMenu.Controls.Add(this.panelToolsSubMenu);
+            this.panelSideMenu.Controls.Add(this.PanelSemantico);
             this.panelSideMenu.Controls.Add(this.btnTools);
-            this.panelSideMenu.Controls.Add(this.panelPlaylistSubMenu);
+            this.panelSideMenu.Controls.Add(this.PanelSintactico);
             this.panelSideMenu.Controls.Add(this.btnPlaylist);
-            this.panelSideMenu.Controls.Add(this.panelMediaSubMenu);
+            this.panelSideMenu.Controls.Add(this.PanelLexico);
             this.panelSideMenu.Controls.Add(this.btnMedia);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -125,17 +128,17 @@
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
-            // panelToolsSubMenu
+            // PanelSemantico
             // 
-            this.panelToolsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelToolsSubMenu.Controls.Add(this.button10);
-            this.panelToolsSubMenu.Controls.Add(this.button12);
-            this.panelToolsSubMenu.Controls.Add(this.button13);
-            this.panelToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelToolsSubMenu.Location = new System.Drawing.Point(0, 557);
-            this.panelToolsSubMenu.Name = "panelToolsSubMenu";
-            this.panelToolsSubMenu.Size = new System.Drawing.Size(233, 130);
-            this.panelToolsSubMenu.TabIndex = 7;
+            this.PanelSemantico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.PanelSemantico.Controls.Add(this.button10);
+            this.PanelSemantico.Controls.Add(this.button12);
+            this.PanelSemantico.Controls.Add(this.button13);
+            this.PanelSemantico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelSemantico.Location = new System.Drawing.Point(0, 557);
+            this.PanelSemantico.Name = "PanelSemantico";
+            this.PanelSemantico.Size = new System.Drawing.Size(233, 130);
+            this.PanelSemantico.TabIndex = 7;
             // 
             // button10
             // 
@@ -212,18 +215,18 @@
             this.btnTools.UseVisualStyleBackColor = true;
             this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
             // 
-            // panelPlaylistSubMenu
+            // PanelSintactico
             // 
-            this.panelPlaylistSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelPlaylistSubMenu.Controls.Add(this.button1);
-            this.panelPlaylistSubMenu.Controls.Add(this.button6);
-            this.panelPlaylistSubMenu.Controls.Add(this.button7);
-            this.panelPlaylistSubMenu.Controls.Add(this.button8);
-            this.panelPlaylistSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPlaylistSubMenu.Location = new System.Drawing.Point(0, 347);
-            this.panelPlaylistSubMenu.Name = "panelPlaylistSubMenu";
-            this.panelPlaylistSubMenu.Size = new System.Drawing.Size(233, 165);
-            this.panelPlaylistSubMenu.TabIndex = 4;
+            this.PanelSintactico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.PanelSintactico.Controls.Add(this.button1);
+            this.PanelSintactico.Controls.Add(this.button6);
+            this.PanelSintactico.Controls.Add(this.button7);
+            this.PanelSintactico.Controls.Add(this.button8);
+            this.PanelSintactico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelSintactico.Location = new System.Drawing.Point(0, 347);
+            this.PanelSintactico.Name = "PanelSintactico";
+            this.PanelSintactico.Size = new System.Drawing.Size(233, 165);
+            this.PanelSintactico.TabIndex = 4;
             // 
             // button1
             // 
@@ -318,18 +321,19 @@
             this.btnPlaylist.UseVisualStyleBackColor = true;
             this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
             // 
-            // panelMediaSubMenu
+            // PanelLexico
             // 
-            this.panelMediaSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelMediaSubMenu.Controls.Add(this.button5);
-            this.panelMediaSubMenu.Controls.Add(this.button4);
-            this.panelMediaSubMenu.Controls.Add(this.button3);
-            this.panelMediaSubMenu.Controls.Add(this.button2);
-            this.panelMediaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMediaSubMenu.Location = new System.Drawing.Point(0, 137);
-            this.panelMediaSubMenu.Name = "panelMediaSubMenu";
-            this.panelMediaSubMenu.Size = new System.Drawing.Size(233, 165);
-            this.panelMediaSubMenu.TabIndex = 2;
+            this.PanelLexico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.PanelLexico.Controls.Add(this.button5);
+            this.PanelLexico.Controls.Add(this.button4);
+            this.PanelLexico.Controls.Add(this.btnTC);
+            this.PanelLexico.Controls.Add(this.btnCargar);
+            this.PanelLexico.Controls.Add(this.PanelSubmenuCargar);
+            this.PanelLexico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelLexico.Location = new System.Drawing.Point(0, 137);
+            this.PanelLexico.Name = "PanelLexico";
+            this.PanelLexico.Size = new System.Drawing.Size(233, 165);
+            this.PanelLexico.TabIndex = 2;
             // 
             // button5
             // 
@@ -362,46 +366,46 @@
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(233, 40);
             this.button4.TabIndex = 2;
-            this.button4.Text = "Ver";
+            this.button4.Text = "Analizador";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnTC
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Silver;
-            this.button3.Location = new System.Drawing.Point(0, 40);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(233, 40);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Analizar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnTC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTC.FlatAppearance.BorderSize = 0;
+            this.btnTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTC.ForeColor = System.Drawing.Color.Silver;
+            this.btnTC.Location = new System.Drawing.Point(0, 40);
+            this.btnTC.Name = "btnTC";
+            this.btnTC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnTC.Size = new System.Drawing.Size(233, 40);
+            this.btnTC.TabIndex = 1;
+            this.btnTC.Text = "Ver TC";
+            this.btnTC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTC.UseVisualStyleBackColor = true;
+            this.btnTC.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnCargar
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(233, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Cargar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnCargar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCargar.FlatAppearance.BorderSize = 0;
+            this.btnCargar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnCargar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargar.ForeColor = System.Drawing.Color.Silver;
+            this.btnCargar.Location = new System.Drawing.Point(0, 0);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCargar.Size = new System.Drawing.Size(233, 40);
+            this.btnCargar.TabIndex = 0;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this._Click);
             // 
             // btnMedia
             // 
@@ -448,9 +452,9 @@
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelPlayer.Location = new System.Drawing.Point(250, 401);
+            this.panelPlayer.Location = new System.Drawing.Point(250, 365);
             this.panelPlayer.Name = "panelPlayer";
-            this.panelPlayer.Size = new System.Drawing.Size(684, 160);
+            this.panelPlayer.Size = new System.Drawing.Size(684, 196);
             this.panelPlayer.TabIndex = 1;
             this.panelPlayer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPlayer_Paint);
             // 
@@ -461,7 +465,7 @@
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(684, 401);
+            this.panelChildForm.Size = new System.Drawing.Size(684, 365);
             this.panelChildForm.TabIndex = 2;
             // 
             // logogeneral
@@ -470,13 +474,30 @@
             this.logogeneral.Image = ((System.Drawing.Image)(resources.GetObject("logogeneral.Image")));
             this.logogeneral.Location = new System.Drawing.Point(0, 0);
             this.logogeneral.Name = "logogeneral";
-            this.logogeneral.Size = new System.Drawing.Size(684, 401);
+            this.logogeneral.Size = new System.Drawing.Size(684, 365);
             this.logogeneral.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logogeneral.TabIndex = 2;
             this.logogeneral.TabStop = false;
             this.logogeneral.Click += new System.EventHandler(this.logogeneral_Click);
             // 
-            // Menu
+            // PanelSubmenuCargar
+            // 
+            this.PanelSubmenuCargar.Controls.Add(this.btn_AFD);
+            this.PanelSubmenuCargar.Location = new System.Drawing.Point(0, 0);
+            this.PanelSubmenuCargar.Name = "PanelSubmenuCargar";
+            this.PanelSubmenuCargar.Size = new System.Drawing.Size(233, 162);
+            this.PanelSubmenuCargar.TabIndex = 4;
+            // 
+            // btn_AFD
+            // 
+            this.btn_AFD.Location = new System.Drawing.Point(147, 45);
+            this.btn_AFD.Name = "btn_AFD";
+            this.btn_AFD.Size = new System.Drawing.Size(75, 23);
+            this.btn_AFD.TabIndex = 5;
+            this.btn_AFD.Text = "button2";
+            this.btn_AFD.UseVisualStyleBackColor = true;
+            // 
+            // Frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -489,18 +510,20 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
-            this.Name = "Menu";
+            this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSideMenu.ResumeLayout(false);
-            this.panelToolsSubMenu.ResumeLayout(false);
-            this.panelPlaylistSubMenu.ResumeLayout(false);
-            this.panelMediaSubMenu.ResumeLayout(false);
+            this.PanelSemantico.ResumeLayout(false);
+            this.PanelSintactico.ResumeLayout(false);
+            this.PanelLexico.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logogeneral)).EndInit();
+            this.PanelSubmenuCargar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -508,19 +531,19 @@
         #endregion
 
         private System.Windows.Forms.Panel panelSideMenu;
-        private System.Windows.Forms.Panel panelMediaSubMenu;
+        private System.Windows.Forms.Panel PanelLexico;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnTC;
+        private System.Windows.Forms.Button btnCargar;
         private System.Windows.Forms.Button btnMedia;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.Panel panelToolsSubMenu;
+        private System.Windows.Forms.Panel PanelSemantico;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button btnTools;
-        private System.Windows.Forms.Panel panelPlaylistSubMenu;
+        private System.Windows.Forms.Panel PanelSintactico;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -532,6 +555,8 @@
         private System.Windows.Forms.Panel panelPlayer;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox logogeneral;
+        private System.Windows.Forms.Panel PanelSubmenuCargar;
+        private System.Windows.Forms.Button btn_AFD;
     }
 }
 

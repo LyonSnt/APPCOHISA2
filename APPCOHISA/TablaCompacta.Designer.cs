@@ -30,13 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabladatagrid = new System.Windows.Forms.DataGridView();
+            this.tablacompa3 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabladatagrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablacompa3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.panel1.Controls.Add(this.tablacompa3);
             this.panel1.Controls.Add(this.tabladatagrid);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -49,9 +52,17 @@
             this.tabladatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabladatagrid.Location = new System.Drawing.Point(12, 34);
             this.tabladatagrid.Name = "tabladatagrid";
-            this.tabladatagrid.Size = new System.Drawing.Size(927, 455);
+            this.tabladatagrid.Size = new System.Drawing.Size(437, 455);
             this.tabladatagrid.TabIndex = 0;
             this.tabladatagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabladatagrid_CellContentClick);
+            // 
+            // tablacompa3
+            // 
+            this.tablacompa3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablacompa3.Location = new System.Drawing.Point(464, 34);
+            this.tablacompa3.Name = "tablacompa3";
+            this.tablacompa3.Size = new System.Drawing.Size(475, 455);
+            this.tablacompa3.TabIndex = 1;
             // 
             // TablaCompacta
             // 
@@ -64,6 +75,7 @@
             this.Load += new System.EventHandler(this.TablaCompacta_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabladatagrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablacompa3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -72,5 +84,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView tabladatagrid;
+        private System.Windows.Forms.DataGridView tablacompa3;
     }
 }

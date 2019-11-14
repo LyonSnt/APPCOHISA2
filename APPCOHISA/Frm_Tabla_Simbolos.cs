@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace APPCOHISA
 {
-    public partial class MatrizAFD : Form
+    public partial class Frm_Tabla_Simbolos : Form
     {
-        public MatrizAFD()
+        public Frm_Tabla_Simbolos()
         {
             InitializeComponent();
-        }
-
-        private void MatrizAFD_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lstMatrizAFD_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

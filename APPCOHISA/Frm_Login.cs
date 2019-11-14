@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace APPCOHISA
 {
-    public partial class Login : Form
+    public partial class Frm_Login : Form
     {
         MySqlConnection conexion = new MySqlConnection("SERVER=127.0.0.1;PORT=3306;DATABASE=bdd_appcohisa;UID=root;PASSWORD=;");
 
@@ -18,7 +18,7 @@ namespace APPCOHISA
        // private Attachment Data;
 
 
-        public Login()
+        public Frm_Login()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace APPCOHISA
 
         private void btningesar_Click(object sender, EventArgs e)
         {
-
+            //COMENTARIO DEEE
             Random rad = new Random();
             // Entre 1000 y 8988
             int aleato = rad.Next(1000, 8988);
@@ -64,7 +64,7 @@ namespace APPCOHISA
                     {
                         MessageBox.Show("Revise su correo y valide");
 
-                        Verificacion veri = new Verificacion();
+                        Frm_Verificacion veri = new Frm_Verificacion();
                         veri.Show();
                         this.Hide();
                     }

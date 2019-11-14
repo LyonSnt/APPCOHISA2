@@ -57,7 +57,7 @@ namespace APPCOHISA
                     {
                         // MessageBox.Show("Registro generado");
                         MessageBox.Show("Revise su correo y valide");
-                        Verificacion veri = new Verificacion();
+                        Frm_Verificacion veri = new Frm_Verificacion();
                         veri.Show();
                         this.Hide();
                     }
@@ -87,7 +87,7 @@ namespace APPCOHISA
         }    
         private void linkr_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Login log = new Login();
+            Frm_Login log = new Frm_Login();
             log.Show();
             this.Hide();
         }

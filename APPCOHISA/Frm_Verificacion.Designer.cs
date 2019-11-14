@@ -1,6 +1,6 @@
 ﻿namespace APPCOHISA
 {
-    partial class Verificacion
+    partial class Frm_Verificacion
     {
         /// <summary>
         /// Required designer variable.

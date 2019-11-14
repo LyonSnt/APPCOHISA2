@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace APPCOHISA
 {
-    public partial class Menu : Form
+    public partial class Frm_Menu : Form
     {
-        public Menu()
+        public Frm_Menu()
         {
             InitializeComponent();
             hideSubMenu();
@@ -15,9 +15,9 @@ namespace APPCOHISA
 
         private void hideSubMenu()
         {
-            panelMediaSubMenu.Visible = false;
-            panelPlaylistSubMenu.Visible = false;
-            panelToolsSubMenu.Visible = false;
+            PanelLexico.Visible = false;
+            PanelSintactico.Visible = false;
+            PanelSemantico.Visible = false;
         }
 
         private void showSubMenu(Panel subMenu)
@@ -33,7 +33,7 @@ namespace APPCOHISA
 
         private void btnMedia_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelMediaSubMenu);
+            showSubMenu(PanelLexico);
         }
 
         #region MediaSubMenu
@@ -59,7 +59,7 @@ namespace APPCOHISA
         private void button4_Click(object sender, EventArgs e)
         {
 
-            openChildForm(new prueba());
+           // openChildForm(new prueba());
             //..
             //your codes
             //..
@@ -77,7 +77,7 @@ namespace APPCOHISA
 
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelPlaylistSubMenu);
+            showSubMenu(PanelSintactico);
         }
 
         #region PlayListManagemetSubMenu
@@ -116,7 +116,7 @@ namespace APPCOHISA
 
         private void btnTools_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelToolsSubMenu);
+            showSubMenu(PanelSemantico);
         }
         #region ToolsSubMenu
         private void button13_Click(object sender, EventArgs e)
@@ -154,7 +154,7 @@ namespace APPCOHISA
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+           // openChildForm(new Form3());
             //..
             //your codes
             //..
@@ -260,6 +260,11 @@ namespace APPCOHISA
         }
 
         private void logogeneral_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void _Click(object sender, EventArgs e)
         {
 
         }
