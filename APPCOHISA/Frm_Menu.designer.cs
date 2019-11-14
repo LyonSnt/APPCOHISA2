@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Menu));
-            this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.PanelMenuLateral = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.PanelSemantico = new System.Windows.Forms.Panel();
@@ -42,49 +42,56 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.btnPlaylist = new System.Windows.Forms.Button();
+            this.btnSintactico = new System.Windows.Forms.Button();
             this.PanelLexico = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnTC = new System.Windows.Forms.Button();
-            this.btnCargar = new System.Windows.Forms.Button();
-            this.btnMedia = new System.Windows.Forms.Button();
+            this.BtnMenuAnalizador = new System.Windows.Forms.Button();
+            this.btnMenuTC = new System.Windows.Forms.Button();
+            this.btnMenuCargar = new System.Windows.Forms.Button();
+            this.BtnLexico = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
-            this.panelChildForm = new System.Windows.Forms.Panel();
-            this.logogeneral = new System.Windows.Forms.PictureBox();
+            this.PanelSubMenuLateral = new System.Windows.Forms.Panel();
+            this.PanelSubmenuAnaliza = new System.Windows.Forms.Panel();
+            this.btnSubTDS = new System.Windows.Forms.Button();
+            this.btnSubTokenReconocido = new System.Windows.Forms.Button();
+            this.BtnSubMovimiento = new System.Windows.Forms.Button();
+            this.BtnSubAnalizador = new System.Windows.Forms.Button();
             this.PanelSubmenuCargar = new System.Windows.Forms.Panel();
-            this.btn_AFD = new System.Windows.Forms.Button();
-            this.panelSideMenu.SuspendLayout();
+            this.BtnAlfabeto = new System.Windows.Forms.Button();
+            this.btnAFD = new System.Windows.Forms.Button();
+            this.BtnSubCargar = new System.Windows.Forms.Button();
+            this.logogeneral = new System.Windows.Forms.PictureBox();
+            this.PanelMenuLateral.SuspendLayout();
             this.PanelSemantico.SuspendLayout();
             this.PanelSintactico.SuspendLayout();
             this.PanelLexico.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelChildForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logogeneral)).BeginInit();
+            this.PanelSubMenuLateral.SuspendLayout();
+            this.PanelSubmenuAnaliza.SuspendLayout();
             this.PanelSubmenuCargar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logogeneral)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelSideMenu
+            // PanelMenuLateral
             // 
-            this.panelSideMenu.AutoScroll = true;
-            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelSideMenu.Controls.Add(this.btnExit);
-            this.panelSideMenu.Controls.Add(this.btnHelp);
-            this.panelSideMenu.Controls.Add(this.PanelSemantico);
-            this.panelSideMenu.Controls.Add(this.btnTools);
-            this.panelSideMenu.Controls.Add(this.PanelSintactico);
-            this.panelSideMenu.Controls.Add(this.btnPlaylist);
-            this.panelSideMenu.Controls.Add(this.PanelLexico);
-            this.panelSideMenu.Controls.Add(this.btnMedia);
-            this.panelSideMenu.Controls.Add(this.panelLogo);
-            this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 561);
-            this.panelSideMenu.TabIndex = 0;
+            this.PanelMenuLateral.AutoScroll = true;
+            this.PanelMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.PanelMenuLateral.Controls.Add(this.btnExit);
+            this.PanelMenuLateral.Controls.Add(this.btnHelp);
+            this.PanelMenuLateral.Controls.Add(this.PanelSemantico);
+            this.PanelMenuLateral.Controls.Add(this.btnTools);
+            this.PanelMenuLateral.Controls.Add(this.PanelSintactico);
+            this.PanelMenuLateral.Controls.Add(this.btnSintactico);
+            this.PanelMenuLateral.Controls.Add(this.PanelLexico);
+            this.PanelMenuLateral.Controls.Add(this.BtnLexico);
+            this.PanelMenuLateral.Controls.Add(this.panelLogo);
+            this.PanelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMenuLateral.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenuLateral.Name = "PanelMenuLateral";
+            this.PanelMenuLateral.Size = new System.Drawing.Size(250, 561);
+            this.PanelMenuLateral.TabIndex = 0;
             // 
             // btnExit
             // 
@@ -96,7 +103,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.Silver;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 732);
+            this.btnExit.Location = new System.Drawing.Point(0, 694);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(233, 45);
@@ -117,7 +124,7 @@
             this.btnHelp.ForeColor = System.Drawing.Color.Silver;
             this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(0, 687);
+            this.btnHelp.Location = new System.Drawing.Point(0, 649);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(233, 45);
@@ -135,7 +142,7 @@
             this.PanelSemantico.Controls.Add(this.button12);
             this.PanelSemantico.Controls.Add(this.button13);
             this.PanelSemantico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSemantico.Location = new System.Drawing.Point(0, 557);
+            this.PanelSemantico.Location = new System.Drawing.Point(0, 519);
             this.PanelSemantico.Name = "PanelSemantico";
             this.PanelSemantico.Size = new System.Drawing.Size(233, 130);
             this.PanelSemantico.TabIndex = 7;
@@ -156,7 +163,6 @@
             this.button10.Text = "Preferences";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button12
             // 
@@ -174,7 +180,6 @@
             this.button12.Text = "Effects and filters";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -192,7 +197,6 @@
             this.button13.Text = "Media converter";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // btnTools
             // 
@@ -204,7 +208,7 @@
             this.btnTools.ForeColor = System.Drawing.Color.Silver;
             this.btnTools.Image = ((System.Drawing.Image)(resources.GetObject("btnTools.Image")));
             this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.Location = new System.Drawing.Point(0, 512);
+            this.btnTools.Location = new System.Drawing.Point(0, 474);
             this.btnTools.Name = "btnTools";
             this.btnTools.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTools.Size = new System.Drawing.Size(233, 45);
@@ -223,7 +227,7 @@
             this.PanelSintactico.Controls.Add(this.button7);
             this.PanelSintactico.Controls.Add(this.button8);
             this.PanelSintactico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSintactico.Location = new System.Drawing.Point(0, 347);
+            this.PanelSintactico.Location = new System.Drawing.Point(0, 309);
             this.PanelSintactico.Name = "PanelSintactico";
             this.PanelSintactico.Size = new System.Drawing.Size(233, 165);
             this.PanelSintactico.TabIndex = 4;
@@ -241,10 +245,9 @@
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(233, 40);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Dibujar";
+            this.button1.Text = "NO";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button6
             // 
@@ -259,10 +262,9 @@
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(233, 40);
             this.button6.TabIndex = 2;
-            this.button6.Text = "Analizar";
+            this.button6.Text = "NO";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -277,10 +279,9 @@
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(233, 40);
             this.button7.TabIndex = 1;
-            this.button7.Text = "Ver";
+            this.button7.Text = "NO";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -295,138 +296,117 @@
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(233, 40);
             this.button8.TabIndex = 0;
-            this.button8.Text = "Cargar";
+            this.button8.Text = "NO";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // btnPlaylist
+            // btnSintactico
             // 
-            this.btnPlaylist.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPlaylist.FlatAppearance.BorderSize = 0;
-            this.btnPlaylist.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnPlaylist.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlaylist.ForeColor = System.Drawing.Color.Silver;
-            this.btnPlaylist.Image = ((System.Drawing.Image)(resources.GetObject("btnPlaylist.Image")));
-            this.btnPlaylist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylist.Location = new System.Drawing.Point(0, 302);
-            this.btnPlaylist.Name = "btnPlaylist";
-            this.btnPlaylist.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnPlaylist.Size = new System.Drawing.Size(233, 45);
-            this.btnPlaylist.TabIndex = 3;
-            this.btnPlaylist.Text = "Analizador Sitáctico";
-            this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlaylist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPlaylist.UseVisualStyleBackColor = true;
-            this.btnPlaylist.Click += new System.EventHandler(this.btnPlaylist_Click);
+            this.btnSintactico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSintactico.FlatAppearance.BorderSize = 0;
+            this.btnSintactico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.btnSintactico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.btnSintactico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSintactico.ForeColor = System.Drawing.Color.Silver;
+            this.btnSintactico.Image = ((System.Drawing.Image)(resources.GetObject("btnSintactico.Image")));
+            this.btnSintactico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSintactico.Location = new System.Drawing.Point(0, 264);
+            this.btnSintactico.Name = "btnSintactico";
+            this.btnSintactico.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnSintactico.Size = new System.Drawing.Size(233, 45);
+            this.btnSintactico.TabIndex = 3;
+            this.btnSintactico.Text = "Analizador Sitáctico";
+            this.btnSintactico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSintactico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSintactico.UseVisualStyleBackColor = true;
+            this.btnSintactico.Click += new System.EventHandler(this.btnSintactico_Click);
             // 
             // PanelLexico
             // 
             this.PanelLexico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.PanelLexico.Controls.Add(this.button5);
-            this.PanelLexico.Controls.Add(this.button4);
-            this.PanelLexico.Controls.Add(this.btnTC);
-            this.PanelLexico.Controls.Add(this.btnCargar);
-            this.PanelLexico.Controls.Add(this.PanelSubmenuCargar);
+            this.PanelLexico.Controls.Add(this.BtnMenuAnalizador);
+            this.PanelLexico.Controls.Add(this.btnMenuTC);
+            this.PanelLexico.Controls.Add(this.btnMenuCargar);
             this.PanelLexico.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelLexico.Location = new System.Drawing.Point(0, 137);
             this.PanelLexico.Name = "PanelLexico";
-            this.PanelLexico.Size = new System.Drawing.Size(233, 165);
+            this.PanelLexico.Size = new System.Drawing.Size(233, 127);
             this.PanelLexico.TabIndex = 2;
             // 
-            // button5
+            // BtnMenuAnalizador
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Silver;
-            this.button5.Location = new System.Drawing.Point(0, 120);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(233, 40);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Nombre";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.BtnMenuAnalizador.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnMenuAnalizador.FlatAppearance.BorderSize = 0;
+            this.BtnMenuAnalizador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.BtnMenuAnalizador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.BtnMenuAnalizador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMenuAnalizador.ForeColor = System.Drawing.Color.Silver;
+            this.BtnMenuAnalizador.Location = new System.Drawing.Point(0, 80);
+            this.BtnMenuAnalizador.Name = "BtnMenuAnalizador";
+            this.BtnMenuAnalizador.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.BtnMenuAnalizador.Size = new System.Drawing.Size(233, 40);
+            this.BtnMenuAnalizador.TabIndex = 2;
+            this.BtnMenuAnalizador.Text = "Analizador";
+            this.BtnMenuAnalizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMenuAnalizador.UseVisualStyleBackColor = true;
+            this.BtnMenuAnalizador.Click += new System.EventHandler(this.BtnMenuAnalizador_Click);
             // 
-            // button4
+            // btnMenuTC
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Silver;
-            this.button4.Location = new System.Drawing.Point(0, 80);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(233, 40);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Analizador";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnMenuTC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMenuTC.FlatAppearance.BorderSize = 0;
+            this.btnMenuTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnMenuTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnMenuTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuTC.ForeColor = System.Drawing.Color.Silver;
+            this.btnMenuTC.Location = new System.Drawing.Point(0, 40);
+            this.btnMenuTC.Name = "btnMenuTC";
+            this.btnMenuTC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnMenuTC.Size = new System.Drawing.Size(233, 40);
+            this.btnMenuTC.TabIndex = 1;
+            this.btnMenuTC.Text = "Ver TC";
+            this.btnMenuTC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuTC.UseVisualStyleBackColor = true;
+            this.btnMenuTC.Click += new System.EventHandler(this.btnMenuTC_Click);
             // 
-            // btnTC
+            // btnMenuCargar
             // 
-            this.btnTC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTC.FlatAppearance.BorderSize = 0;
-            this.btnTC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnTC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTC.ForeColor = System.Drawing.Color.Silver;
-            this.btnTC.Location = new System.Drawing.Point(0, 40);
-            this.btnTC.Name = "btnTC";
-            this.btnTC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnTC.Size = new System.Drawing.Size(233, 40);
-            this.btnTC.TabIndex = 1;
-            this.btnTC.Text = "Ver TC";
-            this.btnTC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTC.UseVisualStyleBackColor = true;
-            this.btnTC.Click += new System.EventHandler(this.button3_Click);
+            this.btnMenuCargar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMenuCargar.FlatAppearance.BorderSize = 0;
+            this.btnMenuCargar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnMenuCargar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnMenuCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuCargar.ForeColor = System.Drawing.Color.Silver;
+            this.btnMenuCargar.Location = new System.Drawing.Point(0, 0);
+            this.btnMenuCargar.Name = "btnMenuCargar";
+            this.btnMenuCargar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnMenuCargar.Size = new System.Drawing.Size(233, 40);
+            this.btnMenuCargar.TabIndex = 0;
+            this.btnMenuCargar.Text = "Cargar";
+            this.btnMenuCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMenuCargar.UseVisualStyleBackColor = true;
+            this.btnMenuCargar.Click += new System.EventHandler(this.btnMenuCargar_Click);
             // 
-            // btnCargar
+            // BtnLexico
             // 
-            this.btnCargar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCargar.FlatAppearance.BorderSize = 0;
-            this.btnCargar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnCargar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargar.ForeColor = System.Drawing.Color.Silver;
-            this.btnCargar.Location = new System.Drawing.Point(0, 0);
-            this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnCargar.Size = new System.Drawing.Size(233, 40);
-            this.btnCargar.TabIndex = 0;
-            this.btnCargar.Text = "Cargar";
-            this.btnCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCargar.UseVisualStyleBackColor = true;
-            this.btnCargar.Click += new System.EventHandler(this._Click);
-            // 
-            // btnMedia
-            // 
-            this.btnMedia.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMedia.FlatAppearance.BorderSize = 0;
-            this.btnMedia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnMedia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnMedia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMedia.ForeColor = System.Drawing.Color.Silver;
-            this.btnMedia.Image = ((System.Drawing.Image)(resources.GetObject("btnMedia.Image")));
-            this.btnMedia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedia.Location = new System.Drawing.Point(0, 92);
-            this.btnMedia.Name = "btnMedia";
-            this.btnMedia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnMedia.Size = new System.Drawing.Size(233, 45);
-            this.btnMedia.TabIndex = 1;
-            this.btnMedia.Text = "Analizador Léxico";
-            this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMedia.UseVisualStyleBackColor = true;
-            this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
+            this.BtnLexico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnLexico.FlatAppearance.BorderSize = 0;
+            this.BtnLexico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.BtnLexico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.BtnLexico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLexico.ForeColor = System.Drawing.Color.Silver;
+            this.BtnLexico.Image = ((System.Drawing.Image)(resources.GetObject("BtnLexico.Image")));
+            this.BtnLexico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLexico.Location = new System.Drawing.Point(0, 92);
+            this.BtnLexico.Name = "BtnLexico";
+            this.BtnLexico.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.BtnLexico.Size = new System.Drawing.Size(233, 45);
+            this.BtnLexico.TabIndex = 1;
+            this.BtnLexico.Text = "Analizador Léxico";
+            this.BtnLexico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLexico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnLexico.UseVisualStyleBackColor = true;
+            this.BtnLexico.Click += new System.EventHandler(this.BtnLexico_Click);
             // 
             // panelLogo
             // 
@@ -451,22 +431,172 @@
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelPlayer.Location = new System.Drawing.Point(250, 365);
+            this.panelPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPlayer.Location = new System.Drawing.Point(250, 0);
             this.panelPlayer.Name = "panelPlayer";
-            this.panelPlayer.Size = new System.Drawing.Size(684, 196);
+            this.panelPlayer.Size = new System.Drawing.Size(684, 561);
             this.panelPlayer.TabIndex = 1;
-            this.panelPlayer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPlayer_Paint);
             // 
-            // panelChildForm
+            // PanelSubMenuLateral
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panelChildForm.Controls.Add(this.logogeneral);
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(250, 0);
-            this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(684, 365);
-            this.panelChildForm.TabIndex = 2;
+            this.PanelSubMenuLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.PanelSubMenuLateral.Controls.Add(this.PanelSubmenuAnaliza);
+            this.PanelSubMenuLateral.Controls.Add(this.PanelSubmenuCargar);
+            this.PanelSubMenuLateral.Controls.Add(this.logogeneral);
+            this.PanelSubMenuLateral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelSubMenuLateral.Location = new System.Drawing.Point(250, 0);
+            this.PanelSubMenuLateral.Name = "PanelSubMenuLateral";
+            this.PanelSubMenuLateral.Size = new System.Drawing.Size(684, 561);
+            this.PanelSubMenuLateral.TabIndex = 2;
+            // 
+            // PanelSubmenuAnaliza
+            // 
+            this.PanelSubmenuAnaliza.Controls.Add(this.btnSubTDS);
+            this.PanelSubmenuAnaliza.Controls.Add(this.btnSubTokenReconocido);
+            this.PanelSubmenuAnaliza.Controls.Add(this.BtnSubMovimiento);
+            this.PanelSubmenuAnaliza.Controls.Add(this.BtnSubAnalizador);
+            this.PanelSubmenuAnaliza.Location = new System.Drawing.Point(3, 217);
+            this.PanelSubmenuAnaliza.Name = "PanelSubmenuAnaliza";
+            this.PanelSubmenuAnaliza.Size = new System.Drawing.Size(200, 148);
+            this.PanelSubmenuAnaliza.TabIndex = 7;
+            this.PanelSubmenuAnaliza.Visible = false;
+            // 
+            // btnSubTDS
+            // 
+            this.btnSubTDS.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSubTDS.FlatAppearance.BorderSize = 0;
+            this.btnSubTDS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnSubTDS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnSubTDS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubTDS.ForeColor = System.Drawing.Color.Silver;
+            this.btnSubTDS.Location = new System.Drawing.Point(0, 105);
+            this.btnSubTDS.Name = "btnSubTDS";
+            this.btnSubTDS.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSubTDS.Size = new System.Drawing.Size(200, 35);
+            this.btnSubTDS.TabIndex = 7;
+            this.btnSubTDS.Text = "TDS";
+            this.btnSubTDS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSubTDS.UseVisualStyleBackColor = true;
+            this.btnSubTDS.Click += new System.EventHandler(this.btnSubTDS_Click);
+            // 
+            // btnSubTokenReconocido
+            // 
+            this.btnSubTokenReconocido.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSubTokenReconocido.FlatAppearance.BorderSize = 0;
+            this.btnSubTokenReconocido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnSubTokenReconocido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnSubTokenReconocido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubTokenReconocido.ForeColor = System.Drawing.Color.Silver;
+            this.btnSubTokenReconocido.Location = new System.Drawing.Point(0, 70);
+            this.btnSubTokenReconocido.Name = "btnSubTokenReconocido";
+            this.btnSubTokenReconocido.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSubTokenReconocido.Size = new System.Drawing.Size(200, 35);
+            this.btnSubTokenReconocido.TabIndex = 5;
+            this.btnSubTokenReconocido.Text = "Token Reconocido";
+            this.btnSubTokenReconocido.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSubTokenReconocido.UseVisualStyleBackColor = true;
+            this.btnSubTokenReconocido.Click += new System.EventHandler(this.btnSubTokenReconocido_Click);
+            // 
+            // BtnSubMovimiento
+            // 
+            this.BtnSubMovimiento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSubMovimiento.FlatAppearance.BorderSize = 0;
+            this.BtnSubMovimiento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.BtnSubMovimiento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.BtnSubMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSubMovimiento.ForeColor = System.Drawing.Color.Silver;
+            this.BtnSubMovimiento.Location = new System.Drawing.Point(0, 35);
+            this.BtnSubMovimiento.Name = "BtnSubMovimiento";
+            this.BtnSubMovimiento.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.BtnSubMovimiento.Size = new System.Drawing.Size(200, 35);
+            this.BtnSubMovimiento.TabIndex = 4;
+            this.BtnSubMovimiento.Text = "Movimiento";
+            this.BtnSubMovimiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSubMovimiento.UseVisualStyleBackColor = true;
+            this.BtnSubMovimiento.Click += new System.EventHandler(this.BtnSubMovimiento_Click);
+            // 
+            // BtnSubAnalizador
+            // 
+            this.BtnSubAnalizador.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSubAnalizador.FlatAppearance.BorderSize = 0;
+            this.BtnSubAnalizador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.BtnSubAnalizador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.BtnSubAnalizador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSubAnalizador.ForeColor = System.Drawing.Color.Silver;
+            this.BtnSubAnalizador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSubAnalizador.Location = new System.Drawing.Point(0, 0);
+            this.BtnSubAnalizador.Name = "BtnSubAnalizador";
+            this.BtnSubAnalizador.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.BtnSubAnalizador.Size = new System.Drawing.Size(200, 35);
+            this.BtnSubAnalizador.TabIndex = 6;
+            this.BtnSubAnalizador.Text = "Analizador";
+            this.BtnSubAnalizador.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnSubAnalizador.UseVisualStyleBackColor = true;
+            // 
+            // PanelSubmenuCargar
+            // 
+            this.PanelSubmenuCargar.Controls.Add(this.BtnAlfabeto);
+            this.PanelSubmenuCargar.Controls.Add(this.btnAFD);
+            this.PanelSubmenuCargar.Controls.Add(this.BtnSubCargar);
+            this.PanelSubmenuCargar.Location = new System.Drawing.Point(0, 92);
+            this.PanelSubmenuCargar.Name = "PanelSubmenuCargar";
+            this.PanelSubmenuCargar.Size = new System.Drawing.Size(200, 113);
+            this.PanelSubmenuCargar.TabIndex = 3;
+            this.PanelSubmenuCargar.Visible = false;
+            // 
+            // BtnAlfabeto
+            // 
+            this.BtnAlfabeto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnAlfabeto.FlatAppearance.BorderSize = 0;
+            this.BtnAlfabeto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.BtnAlfabeto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.BtnAlfabeto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlfabeto.ForeColor = System.Drawing.Color.Silver;
+            this.BtnAlfabeto.Location = new System.Drawing.Point(0, 70);
+            this.BtnAlfabeto.Name = "BtnAlfabeto";
+            this.BtnAlfabeto.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.BtnAlfabeto.Size = new System.Drawing.Size(200, 35);
+            this.BtnAlfabeto.TabIndex = 5;
+            this.BtnAlfabeto.Text = "Alfabeto";
+            this.BtnAlfabeto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAlfabeto.UseVisualStyleBackColor = true;
+            this.BtnAlfabeto.Click += new System.EventHandler(this.BtnAlfabeto_Click_1);
+            // 
+            // btnAFD
+            // 
+            this.btnAFD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAFD.FlatAppearance.BorderSize = 0;
+            this.btnAFD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnAFD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.btnAFD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAFD.ForeColor = System.Drawing.Color.Silver;
+            this.btnAFD.Location = new System.Drawing.Point(0, 35);
+            this.btnAFD.Name = "btnAFD";
+            this.btnAFD.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnAFD.Size = new System.Drawing.Size(200, 35);
+            this.btnAFD.TabIndex = 4;
+            this.btnAFD.Text = "AFD";
+            this.btnAFD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAFD.UseVisualStyleBackColor = true;
+            this.btnAFD.Click += new System.EventHandler(this.btnAFD_Click_1);
+            // 
+            // BtnSubCargar
+            // 
+            this.BtnSubCargar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSubCargar.FlatAppearance.BorderSize = 0;
+            this.BtnSubCargar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
+            this.BtnSubCargar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.BtnSubCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSubCargar.ForeColor = System.Drawing.Color.Silver;
+            this.BtnSubCargar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnSubCargar.Location = new System.Drawing.Point(0, 0);
+            this.BtnSubCargar.Name = "BtnSubCargar";
+            this.BtnSubCargar.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.BtnSubCargar.Size = new System.Drawing.Size(200, 35);
+            this.BtnSubCargar.TabIndex = 6;
+            this.BtnSubCargar.Text = "Cargar";
+            this.BtnSubCargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnSubCargar.UseVisualStyleBackColor = true;
             // 
             // logogeneral
             // 
@@ -474,28 +604,10 @@
             this.logogeneral.Image = ((System.Drawing.Image)(resources.GetObject("logogeneral.Image")));
             this.logogeneral.Location = new System.Drawing.Point(0, 0);
             this.logogeneral.Name = "logogeneral";
-            this.logogeneral.Size = new System.Drawing.Size(684, 365);
+            this.logogeneral.Size = new System.Drawing.Size(684, 561);
             this.logogeneral.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logogeneral.TabIndex = 2;
             this.logogeneral.TabStop = false;
-            this.logogeneral.Click += new System.EventHandler(this.logogeneral_Click);
-            // 
-            // PanelSubmenuCargar
-            // 
-            this.PanelSubmenuCargar.Controls.Add(this.btn_AFD);
-            this.PanelSubmenuCargar.Location = new System.Drawing.Point(0, 0);
-            this.PanelSubmenuCargar.Name = "PanelSubmenuCargar";
-            this.PanelSubmenuCargar.Size = new System.Drawing.Size(233, 162);
-            this.PanelSubmenuCargar.TabIndex = 4;
-            // 
-            // btn_AFD
-            // 
-            this.btn_AFD.Location = new System.Drawing.Point(147, 45);
-            this.btn_AFD.Name = "btn_AFD";
-            this.btn_AFD.Size = new System.Drawing.Size(75, 23);
-            this.btn_AFD.TabIndex = 5;
-            this.btn_AFD.Text = "button2";
-            this.btn_AFD.UseVisualStyleBackColor = true;
             // 
             // Frm_Menu
             // 
@@ -503,9 +615,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(934, 561);
-            this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.PanelSubMenuLateral);
             this.Controls.Add(this.panelPlayer);
-            this.Controls.Add(this.panelSideMenu);
+            this.Controls.Add(this.PanelMenuLateral);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -513,30 +625,29 @@
             this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelSideMenu.ResumeLayout(false);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.PanelMenuLateral.ResumeLayout(false);
             this.PanelSemantico.ResumeLayout(false);
             this.PanelSintactico.ResumeLayout(false);
             this.PanelLexico.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelChildForm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.logogeneral)).EndInit();
+            this.PanelSubMenuLateral.ResumeLayout(false);
+            this.PanelSubmenuAnaliza.ResumeLayout(false);
             this.PanelSubmenuCargar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logogeneral)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelSideMenu;
+        private System.Windows.Forms.Panel PanelMenuLateral;
         private System.Windows.Forms.Panel PanelLexico;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnTC;
-        private System.Windows.Forms.Button btnCargar;
-        private System.Windows.Forms.Button btnMedia;
+        private System.Windows.Forms.Button BtnMenuAnalizador;
+        private System.Windows.Forms.Button btnMenuTC;
+        private System.Windows.Forms.Button btnMenuCargar;
+        private System.Windows.Forms.Button BtnLexico;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Panel PanelSemantico;
         private System.Windows.Forms.Button button10;
@@ -548,15 +659,22 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button btnPlaylist;
+        private System.Windows.Forms.Button btnSintactico;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panelPlayer;
-        private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.Panel PanelSubMenuLateral;
         private System.Windows.Forms.PictureBox logogeneral;
         private System.Windows.Forms.Panel PanelSubmenuCargar;
-        private System.Windows.Forms.Button btn_AFD;
+        private System.Windows.Forms.Button BtnAlfabeto;
+        private System.Windows.Forms.Button btnAFD;
+        private System.Windows.Forms.Button BtnSubCargar;
+        private System.Windows.Forms.Panel PanelSubmenuAnaliza;
+        private System.Windows.Forms.Button btnSubTDS;
+        private System.Windows.Forms.Button btnSubTokenReconocido;
+        private System.Windows.Forms.Button BtnSubMovimiento;
+        private System.Windows.Forms.Button BtnSubAnalizador;
     }
 }
 
