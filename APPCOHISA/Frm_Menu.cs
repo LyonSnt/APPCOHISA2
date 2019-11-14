@@ -98,7 +98,7 @@ namespace APPCOHISA
 
         private void BtnMenuAnalizador_Click(object sender, EventArgs e)
         {
-
+            ///yoyyoyoyoy
         }
 
         private void BtnSubMovimiento_Click(object sender, EventArgs e)
