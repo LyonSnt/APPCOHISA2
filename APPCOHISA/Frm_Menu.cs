@@ -98,7 +98,7 @@ namespace APPCOHISA
 
         private void BtnMenuAnalizador_Click(object sender, EventArgs e)
         {
-
+            ///yoyyoyoyoy
         }
 
         private void BtnSubMovimiento_Click(object sender, EventArgs e)
@@ -122,6 +122,8 @@ namespace APPCOHISA
 
         private void btnMenuCargar_Click(object sender, EventArgs e)
         {
+
+            ///yo edite hoyyyyyyyyksksksksk
             showSubMenu(PanelSubmenuCargar);
         }
 
