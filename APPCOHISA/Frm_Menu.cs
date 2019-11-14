@@ -91,6 +91,7 @@ namespace APPCOHISA
 
         private void btnMenuTC_Click(object sender, EventArgs e)
         {
+            ///edito Edisonnnnn
             openChildForm(new TablaCompacta());
             hideSubMenu();
         }
