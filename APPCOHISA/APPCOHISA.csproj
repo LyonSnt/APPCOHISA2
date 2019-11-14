@@ -33,9 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BibliotecaDeClases, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\01_PROYECTOS\JAAPARC\01_C#\A_POSIBLES\DLLs\BibliotecaDeClases.dll</HintPath>
+    <Reference Include="BibliotecaDeClases">
+      <HintPath>..\DLLs\BibliotecaDeClases.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
