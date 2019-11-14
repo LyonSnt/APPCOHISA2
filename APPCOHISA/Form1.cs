@@ -32,7 +32,7 @@ namespace APPCOHISA
             {
                 label2.Left = Width;
             };
-
+            //hhhh
         }
         
         private void timer2_Tick(object sender, EventArgs e)
