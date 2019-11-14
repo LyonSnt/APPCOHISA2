@@ -16,5 +16,10 @@ namespace APPCOHISA
         {
             InitializeComponent();
         }
+
+        private void Frm_Load_Alfabeto_Load(object sender, EventArgs e)
+        {
+            //jjhjhhjh
+        }
     }
 }
