@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace APPCOHISA
 {
-    public partial class Frm_Load_AFD : Form
+    public partial class Frm_Load_TDS : Form
     {
-        public Frm_Load_AFD()
+        public Frm_Load_TDS()
         {
             InitializeComponent();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

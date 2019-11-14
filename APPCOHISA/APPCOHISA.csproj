@@ -78,6 +78,12 @@
     <Compile Include="Frm_Load_Alfabeto.Designer.cs">
       <DependentUpon>Frm_Load_Alfabeto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Load_TDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Load_TDS.Designer.cs">
+      <DependentUpon>Frm_Load_TDS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Movimientos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Load_Alfabeto.resx">
       <DependentUpon>Frm_Load_Alfabeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Load_TDS.resx">
+      <DependentUpon>Frm_Load_TDS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Movimientos.resx">
       <DependentUpon>Frm_Movimientos.cs</DependentUpon>
