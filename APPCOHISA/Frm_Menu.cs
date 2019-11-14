@@ -120,6 +120,8 @@ namespace APPCOHISA
 
         private void btnMenuCargar_Click(object sender, EventArgs e)
         {
+
+            ///yo edite hoyyyyyyyyksksksksk
             showSubMenu(PanelSubmenuCargar);
         }
 
