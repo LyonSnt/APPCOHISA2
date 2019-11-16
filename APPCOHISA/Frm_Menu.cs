@@ -26,6 +26,7 @@ namespace APPCOHISA
             PanelSintactico.Visible = false;
             PanelSemantico.Visible = false;
             PanelSubmenuCargar.Visible = false;
+            PanelSubmenuAnaliza.Visible = false;
         }
 
         public void showSubMenu(Panel subMenu)
@@ -79,6 +80,7 @@ namespace APPCOHISA
         {
 
             logogeneral.Visible = true;
+            //
 
         }
 
@@ -114,8 +116,7 @@ namespace APPCOHISA
 
         private void BtnMenuAnalizador_Click(object sender, EventArgs e)
         {
-           // openChildForm(new TablaCompacta());
-            hideSubMenu();
+            showSubMenu(PanelSubmenuAnaliza);
         }
 
         private void BtnSubMovimiento_Click(object sender, EventArgs e)

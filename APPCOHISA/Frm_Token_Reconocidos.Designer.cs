@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Token_Reconocidos));
             this.PanelTkReconocido = new System.Windows.Forms.Panel();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.btnAdvert = new System.Windows.Forms.Button();
@@ -73,21 +74,28 @@
             // 
             // btnAdvert
             // 
+            this.btnAdvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdvert.Image = ((System.Drawing.Image)(resources.GetObject("btnAdvert.Image")));
+            this.btnAdvert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdvert.Location = new System.Drawing.Point(180, 36);
             this.btnAdvert.Name = "btnAdvert";
-            this.btnAdvert.Size = new System.Drawing.Size(75, 23);
+            this.btnAdvert.Size = new System.Drawing.Size(105, 29);
             this.btnAdvert.TabIndex = 18;
             this.btnAdvert.Text = "Aceptar";
+            this.btnAdvert.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdvert.UseVisualStyleBackColor = true;
             this.btnAdvert.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(180, 76);
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(387, 92);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 23);
+            this.button1.Size = new System.Drawing.Size(146, 34);
             this.button1.TabIndex = 19;
             this.button1.Text = "aceptar y cancelar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
