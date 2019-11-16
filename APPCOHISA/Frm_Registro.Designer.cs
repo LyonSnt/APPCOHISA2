@@ -37,9 +37,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkr = new System.Windows.Forms.LinkLabel();
-            this.contenedor = new System.Windows.Forms.Panel();
+            this.PanelRegistro = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
-            this.contenedor.SuspendLayout();
+            this.PanelRegistro.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnguardarr
@@ -140,29 +140,30 @@
             this.linkr.Text = "Iniciar Sesión..!";
             this.linkr.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkr_LinkClicked);
             // 
-            // contenedor
+            // PanelRegistro
             // 
-            this.contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.contenedor.Controls.Add(this.groupBox1);
-            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(0, 0);
-            this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(449, 259);
-            this.contenedor.TabIndex = 8;
+            this.PanelRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.PanelRegistro.Controls.Add(this.groupBox1);
+            this.PanelRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelRegistro.Location = new System.Drawing.Point(0, 0);
+            this.PanelRegistro.Name = "PanelRegistro";
+            this.PanelRegistro.Size = new System.Drawing.Size(449, 259);
+            this.PanelRegistro.TabIndex = 8;
             // 
             // Frm_Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(449, 259);
-            this.Controls.Add(this.contenedor);
+            this.Controls.Add(this.PanelRegistro);
             this.Name = "Frm_Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
             this.Load += new System.EventHandler(this.Frm_Registro_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.contenedor.ResumeLayout(false);
+            this.PanelRegistro.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -178,6 +179,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.LinkLabel linkr;
-        private System.Windows.Forms.Panel contenedor;
+        private System.Windows.Forms.Panel PanelRegistro;
     }
 }

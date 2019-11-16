@@ -299,6 +299,7 @@
             this.button8.Text = "NO";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // btnSintactico
             // 
@@ -530,6 +531,7 @@
             this.BtnSubAnalizador.Size = new System.Drawing.Size(200, 35);
             this.BtnSubAnalizador.TabIndex = 6;
             this.BtnSubAnalizador.Text = "Analizador";
+            this.BtnSubAnalizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSubAnalizador.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnSubAnalizador.UseVisualStyleBackColor = true;
             // 
@@ -595,7 +597,7 @@
             this.BtnSubCargar.Size = new System.Drawing.Size(200, 35);
             this.BtnSubCargar.TabIndex = 6;
             this.BtnSubCargar.Text = "Cargar";
-            this.BtnSubCargar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnSubCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSubCargar.UseVisualStyleBackColor = true;
             // 
             // logogeneral
@@ -626,6 +628,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_Menu_Load);
             this.PanelMenuLateral.ResumeLayout(false);
             this.PanelSemantico.ResumeLayout(false);
             this.PanelSintactico.ResumeLayout(false);
@@ -643,18 +646,15 @@
         #endregion
 
         private System.Windows.Forms.Panel PanelMenuLateral;
-        private System.Windows.Forms.Panel PanelLexico;
         private System.Windows.Forms.Button BtnMenuAnalizador;
         private System.Windows.Forms.Button btnMenuTC;
         private System.Windows.Forms.Button btnMenuCargar;
         private System.Windows.Forms.Button BtnLexico;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.Panel PanelSemantico;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button btnTools;
-        private System.Windows.Forms.Panel PanelSintactico;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
@@ -666,7 +666,6 @@
         private System.Windows.Forms.Panel panelPlayer;
         private System.Windows.Forms.Panel PanelSubMenuLateral;
         private System.Windows.Forms.PictureBox logogeneral;
-        private System.Windows.Forms.Panel PanelSubmenuCargar;
         private System.Windows.Forms.Button BtnAlfabeto;
         private System.Windows.Forms.Button btnAFD;
         private System.Windows.Forms.Button BtnSubCargar;
@@ -675,6 +674,10 @@
         private System.Windows.Forms.Button btnSubTokenReconocido;
         private System.Windows.Forms.Button BtnSubMovimiento;
         private System.Windows.Forms.Button BtnSubAnalizador;
+        public System.Windows.Forms.Panel PanelSubmenuCargar;
+        public System.Windows.Forms.Panel PanelLexico;
+        public System.Windows.Forms.Panel PanelSemantico;
+        public System.Windows.Forms.Panel PanelSintactico;
     }
 }
 

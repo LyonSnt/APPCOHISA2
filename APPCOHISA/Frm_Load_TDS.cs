@@ -16,5 +16,15 @@ namespace APPCOHISA
         {
             InitializeComponent();
         }
+
+        private void Frm_Load_TDS_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

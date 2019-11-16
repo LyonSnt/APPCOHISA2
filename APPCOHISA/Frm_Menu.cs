@@ -1,17 +1,26 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
+
 
 namespace APPCOHISA
 {
     public partial class Frm_Menu : Form
     {
+
+        //Instancia de la clase Leer
+        Leer l = new Leer();
+        //Alamcena la ruta del archivo .txt
+        public string ARCHIVO = "";
+
+      
         public Frm_Menu()
         {
             InitializeComponent();
             hideSubMenu();
         }
 
-        private void hideSubMenu()
+        public void hideSubMenu()
         {
             PanelLexico.Visible = false;
             PanelSintactico.Visible = false;
@@ -19,7 +28,7 @@ namespace APPCOHISA
             PanelSubmenuCargar.Visible = false;
         }
 
-        private void showSubMenu(Panel subMenu)
+        public void showSubMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
             {
@@ -50,7 +59,8 @@ namespace APPCOHISA
         }
 
         private Form activeForm = null;
-        private void openChildForm(Form childForm)
+
+        public void openChildForm(Form childForm)
         {
             if (activeForm != null) activeForm.Close();
             activeForm = childForm;
@@ -79,26 +89,33 @@ namespace APPCOHISA
 
         private void btnAFD_Click_1(object sender, EventArgs e)
         {
-             openChildForm(new Frm_Load_AFD());
+            openChildForm(new Frm_Load_AFD());
             hideSubMenu();
         }
 
+       
+
         private void BtnAlfabeto_Click_1(object sender, EventArgs e)
         {
-             openChildForm(new Frm_Load_Alfabeto());
+
+            //  cargarArchivo();
+
+            openChildForm(new Frm_Load_Alfabeto2());
             hideSubMenu();
+
         }
 
         private void btnMenuTC_Click(object sender, EventArgs e)
         {
             ///edito Edisonnnnn
-            openChildForm(new TablaCompacta());
+           // openChildForm(new TablaCompacta());
             hideSubMenu();
         }
 
         private void BtnMenuAnalizador_Click(object sender, EventArgs e)
         {
-            ///yoyyoyoyoy
+           // openChildForm(new TablaCompacta());
+            hideSubMenu();
         }
 
         private void BtnSubMovimiento_Click(object sender, EventArgs e)
@@ -134,6 +151,22 @@ namespace APPCOHISA
         private void btnSintactico_Click(object sender, EventArgs e)
         {
             showSubMenu(PanelSintactico);
+        }
+
+        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void Frm_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Frm_Token_Reconocidos());
+            hideSubMenu();
         }
     }
 }
