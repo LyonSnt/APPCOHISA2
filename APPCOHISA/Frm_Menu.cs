@@ -120,6 +120,7 @@ namespace APPCOHISA
 
         private void BtnSubMovimiento_Click(object sender, EventArgs e)
         {
+            //edismmnznxgxgxg
             openChildForm(new Frm_Movimientos());
             hideSubMenu();
         }
