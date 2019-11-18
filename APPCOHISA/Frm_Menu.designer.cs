@@ -106,7 +106,7 @@
             this.btnExit.Location = new System.Drawing.Point(0, 694);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(233, 45);
+            this.btnExit.Size = new System.Drawing.Size(229, 45);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "  Exit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,7 +127,7 @@
             this.btnHelp.Location = new System.Drawing.Point(0, 649);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnHelp.Size = new System.Drawing.Size(233, 45);
+            this.btnHelp.Size = new System.Drawing.Size(229, 45);
             this.btnHelp.TabIndex = 8;
             this.btnHelp.Text = "  Help";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,7 +144,7 @@
             this.PanelSemantico.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSemantico.Location = new System.Drawing.Point(0, 519);
             this.PanelSemantico.Name = "PanelSemantico";
-            this.PanelSemantico.Size = new System.Drawing.Size(233, 130);
+            this.PanelSemantico.Size = new System.Drawing.Size(229, 130);
             this.PanelSemantico.TabIndex = 7;
             // 
             // button10
@@ -158,7 +158,7 @@
             this.button10.Location = new System.Drawing.Point(0, 80);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(233, 40);
+            this.button10.Size = new System.Drawing.Size(229, 40);
             this.button10.TabIndex = 2;
             this.button10.Text = "Preferences";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,7 +175,7 @@
             this.button12.Location = new System.Drawing.Point(0, 40);
             this.button12.Name = "button12";
             this.button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(233, 40);
+            this.button12.Size = new System.Drawing.Size(229, 40);
             this.button12.TabIndex = 1;
             this.button12.Text = "Effects and filters";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -192,7 +192,7 @@
             this.button13.Location = new System.Drawing.Point(0, 0);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(233, 40);
+            this.button13.Size = new System.Drawing.Size(229, 40);
             this.button13.TabIndex = 0;
             this.button13.Text = "Media converter";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,7 +211,7 @@
             this.btnTools.Location = new System.Drawing.Point(0, 474);
             this.btnTools.Name = "btnTools";
             this.btnTools.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnTools.Size = new System.Drawing.Size(233, 45);
+            this.btnTools.Size = new System.Drawing.Size(229, 45);
             this.btnTools.TabIndex = 6;
             this.btnTools.Text = "Analizador Semántico";
             this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,7 +229,7 @@
             this.PanelSintactico.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSintactico.Location = new System.Drawing.Point(0, 309);
             this.PanelSintactico.Name = "PanelSintactico";
-            this.PanelSintactico.Size = new System.Drawing.Size(233, 165);
+            this.PanelSintactico.Size = new System.Drawing.Size(229, 165);
             this.PanelSintactico.TabIndex = 4;
             // 
             // button1
@@ -243,7 +243,7 @@
             this.button1.Location = new System.Drawing.Point(0, 120);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(233, 40);
+            this.button1.Size = new System.Drawing.Size(229, 40);
             this.button1.TabIndex = 3;
             this.button1.Text = "NO";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -260,7 +260,7 @@
             this.button6.Location = new System.Drawing.Point(0, 80);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(233, 40);
+            this.button6.Size = new System.Drawing.Size(229, 40);
             this.button6.TabIndex = 2;
             this.button6.Text = "NO";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -277,7 +277,7 @@
             this.button7.Location = new System.Drawing.Point(0, 40);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(233, 40);
+            this.button7.Size = new System.Drawing.Size(229, 40);
             this.button7.TabIndex = 1;
             this.button7.Text = "NO";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -294,7 +294,7 @@
             this.button8.Location = new System.Drawing.Point(0, 0);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(233, 40);
+            this.button8.Size = new System.Drawing.Size(229, 40);
             this.button8.TabIndex = 0;
             this.button8.Text = "NO";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -313,7 +313,7 @@
             this.btnSintactico.Location = new System.Drawing.Point(0, 264);
             this.btnSintactico.Name = "btnSintactico";
             this.btnSintactico.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnSintactico.Size = new System.Drawing.Size(233, 45);
+            this.btnSintactico.Size = new System.Drawing.Size(229, 45);
             this.btnSintactico.TabIndex = 3;
             this.btnSintactico.Text = "Analizador Sitáctico";
             this.btnSintactico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -330,7 +330,7 @@
             this.PanelLexico.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelLexico.Location = new System.Drawing.Point(0, 137);
             this.PanelLexico.Name = "PanelLexico";
-            this.PanelLexico.Size = new System.Drawing.Size(233, 127);
+            this.PanelLexico.Size = new System.Drawing.Size(229, 127);
             this.PanelLexico.TabIndex = 2;
             // 
             // BtnMenuAnalizador
@@ -344,7 +344,7 @@
             this.BtnMenuAnalizador.Location = new System.Drawing.Point(0, 80);
             this.BtnMenuAnalizador.Name = "BtnMenuAnalizador";
             this.BtnMenuAnalizador.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.BtnMenuAnalizador.Size = new System.Drawing.Size(233, 40);
+            this.BtnMenuAnalizador.Size = new System.Drawing.Size(229, 40);
             this.BtnMenuAnalizador.TabIndex = 2;
             this.BtnMenuAnalizador.Text = "Analizador";
             this.BtnMenuAnalizador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -362,7 +362,7 @@
             this.btnMenuTC.Location = new System.Drawing.Point(0, 40);
             this.btnMenuTC.Name = "btnMenuTC";
             this.btnMenuTC.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnMenuTC.Size = new System.Drawing.Size(233, 40);
+            this.btnMenuTC.Size = new System.Drawing.Size(229, 40);
             this.btnMenuTC.TabIndex = 1;
             this.btnMenuTC.Text = "Ver TC";
             this.btnMenuTC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -380,7 +380,7 @@
             this.btnMenuCargar.Location = new System.Drawing.Point(0, 0);
             this.btnMenuCargar.Name = "btnMenuCargar";
             this.btnMenuCargar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnMenuCargar.Size = new System.Drawing.Size(233, 40);
+            this.btnMenuCargar.Size = new System.Drawing.Size(229, 40);
             this.btnMenuCargar.TabIndex = 0;
             this.btnMenuCargar.Text = "Cargar";
             this.btnMenuCargar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -400,7 +400,7 @@
             this.BtnLexico.Location = new System.Drawing.Point(0, 92);
             this.BtnLexico.Name = "BtnLexico";
             this.BtnLexico.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.BtnLexico.Size = new System.Drawing.Size(233, 45);
+            this.BtnLexico.Size = new System.Drawing.Size(229, 45);
             this.BtnLexico.TabIndex = 1;
             this.BtnLexico.Text = "Analizador Léxico";
             this.BtnLexico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -414,7 +414,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(233, 92);
+            this.panelLogo.Size = new System.Drawing.Size(229, 92);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox1
@@ -611,7 +611,7 @@
             // 
             // Frm_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(934, 561);
@@ -626,6 +626,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Frm_Menu_Load);
             this.PanelMenuLateral.ResumeLayout(false);
             this.PanelSemantico.ResumeLayout(false);
             this.PanelSintactico.ResumeLayout(false);

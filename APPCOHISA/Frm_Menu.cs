@@ -99,6 +99,9 @@ namespace APPCOHISA
         private void BtnMenuAnalizador_Click(object sender, EventArgs e)
         {
             ///yoyyoyoyoy
+            ///fjfghfjgfhg
+            ///mmmmm
+            ///vvv
         }
 
         private void BtnSubMovimiento_Click(object sender, EventArgs e)
@@ -135,6 +138,11 @@ namespace APPCOHISA
         private void btnSintactico_Click(object sender, EventArgs e)
         {
             showSubMenu(PanelSintactico);
+        }
+
+        private void Frm_Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
