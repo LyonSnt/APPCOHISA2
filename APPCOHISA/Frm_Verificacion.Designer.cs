@@ -31,9 +31,9 @@
             this.panellogin = new System.Windows.Forms.GroupBox();
             this.btnverificar = new System.Windows.Forms.Button();
             this.txtverificar = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelVerificacion = new System.Windows.Forms.Panel();
             this.panellogin.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.PanelVerificacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // panellogin
@@ -70,29 +70,30 @@
             this.txtverificar.Size = new System.Drawing.Size(213, 26);
             this.txtverificar.TabIndex = 1;
             // 
-            // panel1
+            // PanelVerificacion
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.panellogin);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(334, 189);
-            this.panel1.TabIndex = 2;
+            this.PanelVerificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.PanelVerificacion.Controls.Add(this.panellogin);
+            this.PanelVerificacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelVerificacion.Location = new System.Drawing.Point(0, 0);
+            this.PanelVerificacion.Name = "PanelVerificacion";
+            this.PanelVerificacion.Size = new System.Drawing.Size(334, 189);
+            this.PanelVerificacion.TabIndex = 2;
             // 
-            // Verificacion
+            // Frm_Verificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(334, 189);
-            this.Controls.Add(this.panel1);
-            this.Name = "Verificacion";
+            this.Controls.Add(this.PanelVerificacion);
+            this.Name = "Frm_Verificacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verificacion";
             this.Load += new System.EventHandler(this.Verificacion_Load);
             this.panellogin.ResumeLayout(false);
             this.panellogin.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.PanelVerificacion.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -102,6 +103,6 @@
         private System.Windows.Forms.GroupBox panellogin;
         private System.Windows.Forms.Button btnverificar;
         private System.Windows.Forms.TextBox txtverificar;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelVerificacion;
     }
 }

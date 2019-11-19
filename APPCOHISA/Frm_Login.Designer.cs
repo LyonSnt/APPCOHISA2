@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panellogin = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btningesar = new System.Windows.Forms.Button();
@@ -37,16 +36,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PanelLoginn = new System.Windows.Forms.Panel();
             this.panellogin.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.PanelLoginn.SuspendLayout();
             this.SuspendLayout();
             // 
             // panellogin
             // 
             this.panellogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panellogin.Controls.Add(this.button5);
             this.panellogin.Controls.Add(this.linkLabel1);
             this.panellogin.Controls.Add(this.btncancelar);
             this.panellogin.Controls.Add(this.btningesar);
@@ -62,21 +60,6 @@
             this.panellogin.TabIndex = 0;
             this.panellogin.TabStop = false;
             this.panellogin.Text = "Iniciar Sesión";
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.LightGray;
-            this.button5.Location = new System.Drawing.Point(47, 160);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(25, 25);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "X";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // linkLabel1
             // 
@@ -164,29 +147,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Email:";
             // 
-            // panel1
+            // PanelLoginn
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
-            this.panel1.Controls.Add(this.panellogin);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(416, 249);
-            this.panel1.TabIndex = 1;
+            this.PanelLoginn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.PanelLoginn.Controls.Add(this.panellogin);
+            this.PanelLoginn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelLoginn.Location = new System.Drawing.Point(0, 0);
+            this.PanelLoginn.Name = "PanelLoginn";
+            this.PanelLoginn.Size = new System.Drawing.Size(416, 249);
+            this.PanelLoginn.TabIndex = 1;
             // 
-            // Login
+            // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(416, 249);
-            this.Controls.Add(this.panel1);
-            this.Name = "Login";
+            this.Controls.Add(this.PanelLoginn);
+            this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panellogin.ResumeLayout(false);
             this.panellogin.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.PanelLoginn.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -200,8 +184,7 @@
         private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtusuario;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PanelLoginn;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button5;
     }
 }
