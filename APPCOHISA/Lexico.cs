@@ -15,9 +15,8 @@ namespace APPCOHISA
         ArrayList tipos;
 
         //ArrayList Operaciones;
-        ArrayList Graficas_ar;
-
-        ArrayList Lista_Operaciones;
+        // private ArrayList Graficas_ar;
+        private readonly ArrayList Lista_Operaciones;
         static private List<Token> listaTokens;
         public List<Lineas_Ejecutar> lin_ejecutar;
         public List<Graficas_Ejecutar> graf_ejecutar;
@@ -53,14 +52,14 @@ namespace APPCOHISA
 
         }
 
-        public void addToken(int numeroToken, string sinonimo, string nombreToken, string lexema, int linea, int columna)
+        public void AddToken(int numeroToken, string sinonimo, string nombreToken, string lexema, string v, int linea, int columna, int v1)
         {
             //MessageBox.Show("*" + lexema + "* lin: " + linea + " col: " + columna, "Lexema_final");
             Token nuevo = new Token(numeroToken, sinonimo, nombreToken, lexema, linea, columna);
             listaTokens.Add(nuevo);
         }
 
-        public void addError(int numeroToken, string sinonimo, string nombreToken, string lexema, int linea, int columna)
+        public void AddError(int numeroToken, string sinonimo, string nombreToken, string lexema, string v, int linea, int columna)
         {
             Error errtok = new Error(numeroToken, sinonimo, nombreToken, lexema, linea, columna);
             listaErrores.Add(errtok);
@@ -75,7 +74,7 @@ namespace APPCOHISA
             string sinonimo = "";
             string nombreToken = "";
             string lexema = "";
-            Char c;
+            char c;
             //MessageBox.Show(entrada, "111 entrada");
             entrada = entrada + " ";
             //entrada = entrada;
@@ -90,12 +89,12 @@ namespace APPCOHISA
                 {
                     case 0:
                         //columna++;
-                        if (Char.IsLetter(c))
+                        if (char.IsLetter(c))
                         {
                             estado = 1;
                             lexema += c;
                         }
-                        else if (Char.IsDigit(c))
+                        else if (char.IsDigit(c))
                         {
                             estado = 2;
                             lexema += c;
@@ -135,26 +134,26 @@ namespace APPCOHISA
 
 
 
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "llaveIzq", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "llaveIzq", fila, columna, i - lexema.Length);
                             lexema = "";
                         }
                         else if (c == '}')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "llaveDer", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "llaveDer", fila, columna, i - lexema.Length);
                             ////addToken(lexema, "llaveDer", pos + 1, 0);
                             lexema = "";
                         }
                         else if (c == '(')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "parIzq", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "parIzq", fila, columna, i - lexema.Length);
                             lexema = "";
                         }
                         else if (c == ')')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "parDer", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "parDer", fila, columna, i - lexema.Length);
                             lexema = "";
                         }
                         else if (c == ',')
@@ -167,27 +166,27 @@ namespace APPCOHISA
                         else if (c == ';')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Punto y Coma", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Punto y Coma", fila, columna, i - lexema.Length);
                             lexema = "";
                         }
 
                         else if (c == '<')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Menor", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Menor", fila, columna, i - lexema.Length);
                             lexema = "";
                         }
                         else if (c == '>')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Mayor", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Mayor", fila, columna, i - lexema.Length);
                             lexema = "";
                         }
 
                         else if (c == '.')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Punto", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Punto", fila, columna, i - lexema.Length);
                             lexema = "";
                         }
 
@@ -197,25 +196,25 @@ namespace APPCOHISA
                         else if (c == '+')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Suma", fila, columna, i);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Suma", fila, columna, i);
                             lexema = "";
                         }
                         else if (c == '-')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Menos", fila, columna, i);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Menos", fila, columna, i);
                             lexema = "";
                         }
                         else if (c == '*')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Multiplicacion", fila, columna, i);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Multiplicacion", fila, columna, i);
                             lexema = "";
                         }
                         else if (c == '/')
                         {
                             lexema += c;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Division", fila, columna, i);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Division", fila, columna, i);
                             lexema = "";
                         }
 
@@ -230,8 +229,8 @@ namespace APPCOHISA
                         }
                         break;
                     case 1:
-                        //if (Char.IsLetter(c))
-                        if (Char.IsLetterOrDigit(c) || c == '_')
+                        //if (char.IsLetter(c))
+                        if (char.IsLetterOrDigit(c) || c == '_')
                         {
                             lexema += c;
                             estado = 1;
@@ -248,12 +247,12 @@ namespace APPCOHISA
                                 //tokens.add(token);
 
                                 //////////////////////////77MessageBox.Show("*1*" + lexema + "*1*", "lexema");
-                                addToken(numeroToken, sinonimo, nombreToken, lexema, "Reservada", fila, columna, i - lexema.Length);
+                                AddToken(numeroToken, sinonimo, nombreToken, lexema, "Reservada", fila, columna, i - lexema.Length);
                             }
                             else
                             {
                                 ////////////////////////777MessageBox.Show("*2*" + lexema + "*2*", "lexema");
-                                addToken(numeroToken, sinonimo, nombreToken, lexema, "Identificador", fila, columna, i - lexema.Length);
+                                AddToken(numeroToken, sinonimo, nombreToken, lexema, "Identificador", fila, columna, i - lexema.Length);
                                 /*nuevo inicio*/
                                 /*Boolean encon_tipo = false;
                                 encon_tipo = Macht_enTipo(lexema);
@@ -275,7 +274,7 @@ namespace APPCOHISA
                         }
                         break;
                     case 2:
-                        if (Char.IsDigit(c))
+                        if (char.IsDigit(c))
                         {
                             lexema += c;
                             estado = 2;
@@ -291,7 +290,7 @@ namespace APPCOHISA
                         {
                             //token = new Token(3, "Numero", lexema, fila, columna);
                             //tokens.add(token);
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Digito", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Digito", fila, columna, i - lexema.Length);
                             lexema = "";
                             i--;
                             columna--;
@@ -299,7 +298,7 @@ namespace APPCOHISA
                         }
                         break;
                     case 3:
-                        if (Char.IsDigit(c))
+                        if (char.IsDigit(c))
                         {
                             lexema += c;
                             estado = 2;
@@ -338,7 +337,7 @@ namespace APPCOHISA
                             lexema += c;
                             //token = new Token(2, "Cadena", lexema, fila, columna);
                             //tokens.add(token);
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Cadena", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Cadena", fila, columna, i - lexema.Length);
                             estado = 0;
                             lexema = "";
                         }
@@ -347,7 +346,7 @@ namespace APPCOHISA
                             lexema += c;
                             //token = new Token(4, "Coma", lexema, fila, columna);
                             //tokens.add(token);
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Coma", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Coma", fila, columna, i - lexema.Length);
                             estado = 0;
                             lexema = "";
                         }
@@ -356,7 +355,7 @@ namespace APPCOHISA
 
                     /**inicio nuevo**/
                     case 8:
-                        if (Char.IsDigit(c))
+                        if (char.IsDigit(c))
                         {
                             estado = 9;
                             lexema += c;
@@ -370,7 +369,7 @@ namespace APPCOHISA
                         }
                         break;
                     case 9:
-                        if (Char.IsDigit(c))
+                        if (char.IsDigit(c))
                         {
                             estado = 9;
                             lexema += c;
@@ -381,7 +380,7 @@ namespace APPCOHISA
                             //estado = 0;
                             //lexema = "";
                             //pos -= 1;
-                            addToken(numeroToken, sinonimo, nombreToken, lexema, "Digito", fila, columna, i - lexema.Length);
+                            AddToken(numeroToken, sinonimo, nombreToken, lexema, "Digito", fila, columna, i - lexema.Length);
                             lexema = "";
                             i--;
                             columna--;
@@ -406,19 +405,11 @@ namespace APPCOHISA
 
         }
 
-        private void AddError(int numeroToken, string sinonimo, string nombreToken, string lexema, string v, int fila, int columna)
+ 
+        public bool Macht_enReser(string sente)
         {
-            throw new NotImplementedException();
-        }
-
-        private void addToken(int numeroToken, string sinonimo, string nombreToken, string lexema, string v1, int fila, int columna, int v2)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Boolean Macht_enReser(string sente)
-        {
-            Boolean enco = false;
+            bool enco = false;
+            
             for (int i = 0; i < tokens.Count; ++i)
             {
                 //MessageBox.Show(tokens[i].Tostring(), sente);
