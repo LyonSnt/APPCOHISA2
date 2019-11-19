@@ -59,7 +59,7 @@ namespace APPCOHISA
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            DialogResult x = MessageBox.Show("Está seguro de que desea salir", "programa", MessageBoxButtons.YesNo);
+            DialogResult x = MessageBox.Show("Está seguro de que desea salir", "Programa", MessageBoxButtons.YesNo);
             if (x == DialogResult.Yes)
             {
                 this.Close();
