@@ -14,7 +14,7 @@ namespace APPCOHISA
         ArrayList tokens;
         ArrayList tipos;
 
-        ArrayList Operaciones;
+        //ArrayList Operaciones;
         ArrayList Graficas_ar;
 
         ArrayList Lista_Operaciones;
