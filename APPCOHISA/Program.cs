@@ -14,7 +14,9 @@ namespace APPCOHISA
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            // Application.Run(new Form1());
-            Application.Run(new FrmPortada());
+         //   Application.Run(new Frm_Menu());
+
+            //
         }
     }
 }
