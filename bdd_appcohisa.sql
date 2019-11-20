@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `bdd_appcohisa`
 --
-
+-- https://www.youtube.com/watch?v=HZ1c25OIX4o		recuperar los archivos hechos commit
 -- --------------------------------------------------------
 
 --
